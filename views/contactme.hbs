@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>{{title}}</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("./Images/hi.jpg");
+
+  min-height: 490px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 75px;
+  max-width: 450px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+   background-color: #008CBA;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+  </head>
+  <body>
+         <div style="background-color: black;color:white;">
+                <table width="100%" border="0" >
+                    <tr height="60px">
+                        <td width="60%" ><p style="margin-left: 10%;">P O R T F O I L I O</p></td>
+                        <td width="10%" align="center"><a href="/">HOME</a></td>
+                        <td width="10%" align="center"><a href="/projects">PROJECTS</a></td>
+                        <td width="10%" align="center"><a href="/about">ABOUT</a></td>
+                        <td width="10%"align="center"><a href="/contactme">CONTACT ME</a></td>
+                    </tr>
+                </table>
+            </div>
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_on_image-->
+        <div class="bg-img">
+        <form class="container">
+           <center><h1>CONTACT ME</h1></center> 
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="msg"><b>Your Message</b></label>
+            <textarea name="msg">Enter Your Message</textarea>
+
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+        </div>
+        </br>
+          <div class="IndexMaindiv" style="height: 220px;width:100%;">
+                <div>
+                    </br>
+                    <center><p><a href="/projects">PROJECTS</a></p>
+                    <p><a href="/contactme">CONTACT ME</a></p>
+                    <p><a href="/about">ABOUT</a></p>
+                    </center>
+                </div>
+                <table align="center" style="width: 95%;" border="0">
+                     <tr align="right">
+                        <td colspan="2">
+                            <a href="https://accounts.google.com/"><img src="./Images/email.jpg" height="30px" width="35px"></a>&nbsp;
+                            <a href="https://github.com/ShabnamPatel786"><img src="./Images/github.png" height="30px" width="40px"></a>&nbsp;
+                            <a href="https://www.instagram.com/"><img src="./Images/instagram.png" height="30px" width="35px"></a>&nbsp;
+                            <a href="https://www.linkedin.com/in/shabnam-patel-010601212/"><img src="./Images/linkdin.png" height="30px" width="35px"></a>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>© 2021 by Shabnam Patel</p></td>
+                        <td align="right">Privacy Policy | Terms & Condition</td>
+                    </tr>
+                   
+                </table>
+            </div>
+  </body>
+</html>

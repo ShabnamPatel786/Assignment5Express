@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+  </script>
+  </head>
+  <body>
+     <div class="IndexMaindiv">
+            <div style="background-color: black;color:white;">
+                <table width="100%" border="0" >
+                    <tr height="60px">
+                        <td width="60%" ><p style="margin-left: 10%;">P O R T F O I L I O</p></td>
+                        <td width="10%" align="center"><a href="/">HOME</a></td>
+                        <td width="10%" align="center"><a href="/projects">PROJECTS</a></td>
+                        <td width="10%" align="center"><a href="/about">ABOUT</a></td>
+                        <td width="10%"align="center"><a href="/contactme">CONTACT ME</a></td>
+                    </tr>
+                </table>
+            </div>
+
+<div class="projectdiv">
+
+  <div>
+  <div id="cf7" class="shadow">
+  <img class='opaque' src="./Images/4.png" />
+  <img src="./Images/1.jpg" />
+  <img src="./Images/2.png" />
+  <img src="./Images/3.jpg" />
+  <img src="./Images/5.png" />
+</div>
+<p id="cf7_controls">
+  <span class="selected">⚫</span>
+  <span>⚫</span>
+  <span>⚫</span>
+  <span>⚫</span>
+  <span>⚫</span>
+</p>
+</div>
+
+<!--https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp-->
+<div class="container-fluid bg-3 text-center">    
+    <h3 class="margin">My Projects</h3><br>
+    <div class="row">
+      <div class="col-sm-4" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/1.jpg" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/2.png" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/3.jpg" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+    </div>
+ 
+    <div class="row" style="margin-top: 2%;">
+      <div class="col-sm-4" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/5.png" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/6.jpg" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="imageP"><img src="./Images/4.png" class="img-responsive margin" style="width:100%;height:200px;" alt="Image"></div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+          <div class="IndexMaindiv" style="height: 220px;width:100%;">
+                <div>
+                    </br>
+                    <center><p><a href="/projects">PROJECTS</a></p>
+                    <p><a href="/contactme">CONTACT ME</a></p>
+                    <p><a href="/about">ABOUT</a></p>
+                    </center>
+                </div>
+                <table align="center" style="width: 95%;" border="0">
+                     <tr align="right">
+                        <td colspan="2">
+                            <a href="https://accounts.google.com/"><img src="./Images/email.jpg" height="30px" width="35px"></a>&nbsp;
+                            <a href="https://github.com/ShabnamPatel786"><img src="./Images/github.png" height="30px" width="40px"></a>&nbsp;
+                            <a href="https://www.instagram.com/"><img src="./Images/instagram.png" height="30px" width="35px"></a>&nbsp;
+                            <a href="https://www.linkedin.com/in/shabnam-patel-010601212/"><img src="./Images/linkdin.png" height="30px" width="35px"></a>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>© 2021 by Shabnam Patel</p></td>
+                        <td align="right">Privacy Policy | Terms & Condition</td>
+                    </tr>
+                </table>
+            </div>
+</body>
