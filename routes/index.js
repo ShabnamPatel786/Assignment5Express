@@ -18,3 +18,5 @@ module.exports = router;
 // git init
 // git add .
 //git commit -m "ExpressAssignment5"
+//git config --global user.name "Shabnam"
+//git config --global user.email "patelshabnamidris@gmail.com"
